@@ -56,6 +56,11 @@ Isso significa que o >conteúdo do conteúdo< de Sebastiao -> **(Sebastiao), é 
 
 Nesse caso, estariamos procurando o valor do conteúdo que o conteúdo do sebastiao carrega.
 
+//////////////////////////////////////////////////////////////////////////////////////////
+
+Messi = int
+Jaiminho = int*
+Sebastiao = int**
 
 
 

@@ -22,6 +22,8 @@ int *p2;
 
 
 
+
+
 p1 = &a;
 
 (p1 é um ponteiro de int(s) e 'a' é uma variável int, logo, o endereço de memória de 'a' é do tipo int* (int pointer))
