@@ -24,7 +24,7 @@ c = soma(a, b);
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-Nesse caso, quando a função é chamada, ela cria duas variáveis (que são uma cópia dos valores passados pra ela) em uma outra região da memória. (Ela cria também um espaço na memória para o Z, que passará o calor para a variável C).
+Nesse caso, quando a função é chamada, ela cria duas variáveis (que são uma cópia dos valores passados pra ela) em uma outra região da memória. (Ela cria também um espaço na memória para o Z, que passará o valor para a variável C).
 
 Após terminar a execução, a função terá as cópias e os valores usados dentro dela mesma apagados.
 
