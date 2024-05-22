@@ -53,6 +53,7 @@ void DesalocaMatriz3D(int**** matriz) {
     *matriz = NULL;
 
 }
+//(Depois vai haver um arquivo só para exemplos de desalocamento de matrizes)
 
 
 
