@@ -38,6 +38,23 @@ void AtribuirValorAMatriz3D (int*** matriz){
 
 }
 
+// Para desalocar uma matriz 3d usamos o seguinte esquema:
+void DesalocaMatriz3D(int**** matriz) {
+    
+    for (int i = 0; i < FATIAS; i++) {
+        for (int j = 0; j < LINHAS; j++) {
+            free((*matriz)[i][j]);
+        }
+        free((*matriz)[i]);
+    }
+    free(*matriz);
+    
+    
+    *matriz = NULL;
+
+}
+
+
 
 int main(){
 
@@ -59,6 +76,7 @@ int main(){
     AtribuirValorAMatriz3D(matriz);
     //Atribuir valor não precisa ser por referencia pois o endereço final onde esses valores vão ser atribuidos são os mesmos que os da nossa matriz aqui na main, mesmo o endereço base do parametro sendo diferente. (Como o o parametro é um ponteiro de ponteiros de ponteiros de inteiros, ele vai guardar os mesmo endereços que a matriz aqui, mesmo que seu local base na memória seja diferente.) 
     PrintMatriz3d(&matriz);
+    DesalocaMatriz3D(&matriz);
 
 
     // Falta desalocar a matriz dinâmica, mas ainda não vi issokkkk

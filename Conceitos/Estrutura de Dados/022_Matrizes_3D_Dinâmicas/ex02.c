@@ -24,10 +24,14 @@ void PrintMatriz3d(int (*matriz)[FATIAS][LINHAS][COLUNAS]) {
 
 }
 
+
+
+
 int main() {
     int matriz[FATIAS][LINHAS][COLUNAS] = {{{1,2,3,4},{5,6,7,8},{9,10,11,12}}, {{13,14,15,16},{17,18,19,20},{21,22,23,24}}};
     //mds kkkkkkkkkkkkkk
     
     PrintMatriz3d(&matriz);
+
     return 0;
 }
