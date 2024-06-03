@@ -108,5 +108,3 @@ typedef struct _aluno {
 // Iremos utilizar apenas o apelido definido
 Aluno ted;
 ///////////////////////////////
-
-
