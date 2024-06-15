@@ -1,9 +1,9 @@
 //Todas as implementações das especificações ficam
 
 #include "floatVector.h"
-//Esse include é mportante :)
+//O include acima é importante :)
 
-#include <stlib.h>
+#include <stdlib.h>
 
 typedef struct _floatVector{
 
@@ -27,7 +27,7 @@ typedef struct _floatVector{
 //(padrão de documentação do vscode)
 floatVector *create(int capacity){
 
-    floatVector *vector = (floatVector*) calloc(1, (floatVector));
+    floatVector *vector = (floatVector*) calloc(1, sizeof(floatVector));
     vector->size = 0;
     vector->capacity = capacity;
     vector->data = (float*) calloc(capacity, sizeof(float));
@@ -36,6 +36,15 @@ floatVector *create(int capacity){
 //Curiosidade: O nome dos parametros na implementação podem ser diferente que os na implementação, contanto que os tipos sejam os mesmos. É possível nem colocar um nome para os parametros nas especificações, mas pode deixar meio confuso então é melhor colocar :]
 
 
+
+
+
+/**
+ * @brief Destroi(desaloca) um vetor de floats usando um ponteiro para apontar para região original onde o vetor se encontra na memória.
+ * 
+ * @param vectorReference ponteiro que referencia o vetor que será desalocado.
+ * @return void
+ */
 void destroy(floatVector **vectorReference){
     
     free((*vectorReference)->data);
@@ -45,3 +54,7 @@ void destroy(floatVector **vectorReference){
     vectorReference = NULL;
 
 }
+
+
+// Para compilar os dados abstratos, colocamos "gcc -c floatVector.c" no terminal. Podemos nomear o arquivo de saida com -o normalmente, mas por default o gcc vai entregar um arquivo como msm nome do que entrou mas com .o invés de .c
+// Detalhe que eu sei de cabeça mas é bom anotar tbm, é que os dois arquivos devem ser guardados na msm pasta para o include do floatVector.h funcione.
