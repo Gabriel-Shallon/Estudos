@@ -4,6 +4,8 @@
 //O include acima é importante :)
 
 #include <stdlib.h>
+#include <stdio.h>
+
 
 typedef struct _floatVector{
 
@@ -32,6 +34,7 @@ floatVector *create(int capacity){
     vector->capacity = capacity;
     vector->data = (float*) calloc(capacity, sizeof(float));
 
+    return vector;
 }
 //Curiosidade: O nome dos parametros na implementação podem ser diferente que os na implementação, contanto que os tipos sejam os mesmos. É possível nem colocar um nome para os parametros nas especificações, mas pode deixar meio confuso então é melhor colocar :]
 
@@ -53,6 +56,62 @@ void destroy(floatVector **vectorReference){
     *vectorReference = NULL;
     vectorReference = NULL;
 
+}
+
+
+
+
+//Já deu pra entender como se usa a documentação default do vscode, como não é nenhum projeto compartilhado não é tão importante assim documentar cada função.
+void append(floatVector *vector, float val){
+    
+    if(vector->size >= vector->capacity){
+        printf ("ERROR in function 'append'\n");
+        printf ("ERROR: vector is full\n");
+        exit(EXIT_FAILURE);
+    }
+
+    vector->data[vector->size] = val;
+    vector->size++;
+
+    //vector->data[vector->size++] = val;
+    //Esse exemplo acima tabém funcionaria, já que o '++' usa o valor atual e só depois addiciona +1.
+}
+
+
+
+
+
+void print(const floatVector *vector){
+    puts("-------------------");
+    printf("Size: %d\n", vector->size);
+    printf("Capacity: %d\n", vector->capacity);
+    puts("----");
+
+    for(int i = 0; i < vector->capacity; i++){
+        printf("[%d] = %f\n",i, vector->data[i]);
+    }
+    puts("-------------------");
+}
+
+
+
+
+int capacity(const floatVector *vector){
+    return vector->capacity;
+}
+
+
+
+
+int size(const floatVector *vector){
+    return vector->size;
+}
+
+
+
+void printSize(const floatVector *vector){
+    printf("Size: %d\n", vector->size);
+    puts("----");
 }
 
 

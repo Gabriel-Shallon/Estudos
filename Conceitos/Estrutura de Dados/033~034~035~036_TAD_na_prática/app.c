@@ -3,6 +3,15 @@
 int main(){
 
     floatVector *vector = create(10);
+    print(vector);
+
+    for(int i = 0; i < capacity(vector); i++){
+        append(vector, size(vector));
+        printSize(vector);
+    };
+
+    print(vector);
+    
     destroy(&vector);
 
     return 0;

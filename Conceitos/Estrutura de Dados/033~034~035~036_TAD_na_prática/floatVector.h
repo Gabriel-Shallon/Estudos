@@ -10,5 +10,6 @@ float get(const floatVector *vector, int index);
 void append(floatVector *vector, float val);
 void set(floatVector *vector, int index, float val);
 void print(const floatVector *vector);
+void printSize(const floatVector *vector);
 
 //(sem nenhum detalhe de implementação aqui, apenas especificações :D )
