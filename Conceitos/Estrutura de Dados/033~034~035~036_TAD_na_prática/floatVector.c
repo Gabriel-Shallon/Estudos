@@ -1,4 +1,4 @@
-//Todas as implementações das especificações ficam
+//Todas as implementações das especificações ficam aqui
 
 #include "floatVector.h"
 //O include acima é importante :)
@@ -105,13 +105,6 @@ int capacity(const floatVector *vector){
 
 int size(const floatVector *vector){
     return vector->size;
-}
-
-
-
-void printSize(const floatVector *vector){
-    printf("Size: %d\n", vector->size);
-    puts("----");
 }
 
 

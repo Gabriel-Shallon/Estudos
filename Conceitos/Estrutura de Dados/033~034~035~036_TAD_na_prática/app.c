@@ -7,7 +7,7 @@ int main(){
 
     for(int i = 0; i < capacity(vector); i++){
         append(vector, size(vector));
-        printSize(vector);
+        print("%d", size(vector));
     };
 
     print(vector);
