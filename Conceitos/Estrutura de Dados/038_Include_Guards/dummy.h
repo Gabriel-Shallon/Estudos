@@ -4,9 +4,7 @@
 #ifndef DUMMY_H
 #define DUMMY_H
 
-typedef struct qualquerStruct{
-    int val;
-} qualquerStruct;
+typedef struct qualquerStruct qualquerStruct;
 
 void hello();
 
