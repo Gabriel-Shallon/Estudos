@@ -1,0 +1,58 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Amiri+Quran&family=Heebo:wght@100..900&family=Noto+Znamenny+Musical+Notation&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amiri+Quran&family=Heebo:wght@100..900&family=Nabla&family=Noto+Znamenny+Musical+Notation&display=swap');
+
+.noto-znamenny-musical-notation-regular {
+    font-family: "Noto Znamenny Musical Notation", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .nabla-diabetes {
+    font-family: "Nabla", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "EDPT" 100,
+      "EHLT" 12;
+  }
+
+.amiri-quran-regular {
+    font-family: "Amiri Quran", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+  }
+  
+
+body{
+    
+    background-image: url("https://imagens.ebc.com.br/N4RXWpPfBN7dpJORSEJvjmV4XAg=/1170x700/smart/https://agenciabrasil.ebc.com.br/sites/default/files/thumbnails/image/50356805901_fddb4303b4_o.jpg?itok=VnjROlXz");
+    font-family: "Noto Znamenny Musical Notation", sans-serif;
+    font-family: "Nabla", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "EDPT" 100,
+      "EHLT" 12;
+}
+
+.caixa-login{
+   width: 30%;
+   height: 40%; 
+   margin: 0 auto;
+   background-color: white;
+   margin-top: 30px;
+}
+
+
+.center-text{
+    text-align: center;
+}
+
+.grid-lin{
+    display: grid;
+    row-gap: 50;
+}
