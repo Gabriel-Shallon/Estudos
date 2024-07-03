@@ -1,0 +1,111 @@
+body{
+    background: rgb(204, 204, 204);
+}
+
+
+
+fieldset{
+    height: 40%;
+    width: 50%;
+    background: white;
+    margin-top: 30px;
+    margin: 0 auto;
+}
+
+h1{
+    font-size: 50px;
+    text-align: center;
+    line-height: 20px; 
+}
+
+
+button{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: -10px;
+    margin-bottom: 15px;
+}
+
+h3{
+    line-height: 5px;
+    font-size: 12px;
+    margin-bottom: 5px;
+    margin-left: 10%;
+}
+
+input{
+    width: 80%;
+    margin-left: 10%;
+}
+
+.a{
+    display: block;
+    font-size: 10px;
+    text-align: right;
+    margin-right: 9%;
+    margin-top: 5px;
+}
+
+.fieldset2{
+    height: 30%;
+    width: 70%;
+    background: white;
+    margin-top: 30px;
+    margin: 0 auto; 
+}
+
+.button2{
+    width: 15%;
+    margin-left: 0;
+}
+
+.input2{
+    width:78%;
+    margin-left: 2%;
+}
+
+.h22{
+    margin-bottom: 5px;
+    margin-left: 2%;
+}
+
+.a2{
+    font-size: 14px;
+    margin-left: 2%;
+} 
+
+h4{
+    font-size: 12px;
+    margin-left: 2%;
+    margin-top: -8px;
+}
+
+.input3{
+    width: 30%;
+    margin-left: 2%;
+}
+
+.button3{
+    width: 31%;
+    margin-left: 2.5%;
+}
+
+label{
+    margin-left: 2%;
+    margin-right: 23%;
+}
+
+.label2{
+    margin-left: 3%;
+    margin-right: 23%;
+}
+
+.label3{
+    margin-left: 6%;
+    margin-right: 23%;
+}
+
+.label4{
+    margin-left: 4%;
+    margin-right: 23%;
+}
